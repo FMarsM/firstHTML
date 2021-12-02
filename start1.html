@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascal Triangle</title>
+</head>
+<body>
+    <h1>Pascal Triangle</h1>
+    <!-- <script>
+        let n = prompt("Введите степень треугольника", '')
+        for ( let y = 0; y < n; y++)
+            {
+                let c = 1;
+                let cLine = "1"
+                for (let x = 0; x <= y; x++)
+                {
+                    c = c * (y - x) / (x + 1);
+                    if (c !=0)
+                    {
+                        cLine =cLine+ ` ${c}`
+                    }
+                    
+                }
+                alert(cLine);
+                
+            }
+    </script> -->
+
+<script>
+    let n = prompt("Введите степень треугольника", '')
+    let cLine
+    for ( let y = 0; y < n; y++)
+        {
+            let c = 1;
+            cLine = "1"
+            for (let x = 0; x <= y; x++)
+            {
+                c = c * (y - x) / (x + 1);
+                if (c !=0)
+                {
+                    cLine =cLine+ ` ${c}`
+                }
+                
+            }
+
+        }
+        document.write(cLine);
+    
+</script>
+</body>
+</html>
